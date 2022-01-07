@@ -1,4 +1,4 @@
-# simple-english-language-corrector
+# simple-english-language-correcter
 step1 write your text in grammercorrecter.txt
 
 step2 run python code grammercorrecter.py
