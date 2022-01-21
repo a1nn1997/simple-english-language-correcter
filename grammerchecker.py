@@ -7,10 +7,12 @@ def englishgrammercorrecter(text):
     parser = GingerIt()
     text = parser.parse(text)
     return str(text["result"])
+if __name__ == '__main__':
+    text = open("grammerchecker.txt", "r+")
+    t = text.read()
+    t1 = englishgrammercorrecter(t)
+    text.write("\n")
+    text.write(t1)
+    text.close()
 
-text=open("grammerchecker.txt","r+")
-t=text.read()
-t1=englishgrammercorrecter(t)
-text.write("\n")
-text.write(t1)
-text.close()
+
